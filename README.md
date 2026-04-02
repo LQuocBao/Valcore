@@ -1,167 +1,57 @@
-# 🚀 Valcore — Personal Brand Landing Page
+# <div align="center">✨ VALCORE ✨</div>
+## <div align="center">**"Nâng Tầm Thương Hiệu Số — Chuyên Nghiệp, Nhanh Chóng & Đẳng Cấp"**</div>
 
-> **"Thiết kế website chuyên nghiệp giúp bạn phát triển kinh doanh"**  
-> Nhanh chóng · Giá cả hợp lý · Chất lượng vượt trội
-
----
-
-## 👤 Về Tôi
-
-**Lâm Quốc Bảo** – Nhà phát triển web tự do (Freelance Web Developer) với hơn 3 năm kinh nghiệm xây dựng giao diện web hiện đại, tối ưu hiệu năng và thiết kế hướng chuyển đổi (conversion-focused).
-
-Tôi chuyên phục vụ **sinh viên IT**, **tiểu thương**, **chủ cửa hàng online** và **doanh nghiệp vừa & nhỏ** — những người cần website đẹp, chạy nhanh, và có ngân sách hợp lý.
-
-- 📞 **Zalo / Phone:** +84 78 554 8882
-- 📧 **Email:** lamquocbao26042005@gmail.com
+<div align="center">
+  <img src="https://img.shields.io/badge/Performance-95%2B-emerald?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Performance Score">
+  <img src="https://img.shields.io/badge/SEO-100-blue?style=for-the-badge&logo=search&logoColor=white" alt="SEO Score">
+  <img src="https://img.shields.io/badge/Design-Premium-indigo?style=for-the-badge&logo=framer&logoColor=white" alt="Design Quality">
+</div>
 
 ---
 
-## ✨ Điểm Nổi Bật Của Dự Án
+### 🛡️ Xây Dựng Niềm Tin Qua Từng Sản Phẩm
+**Valcore** không chỉ đơn thuần là một nhà phát triển website. Chúng tôi là đối tác đồng hành cùng các cá nhân, tiểu thương và doanh nghiệp nhỏ để xây dựng một **"Cửa hàng số"** chuyên nghiệp, uy tín và mang tính chuyển đổi cao.
 
-| Hạng mục | Điểm số |
-|---|---|
-| ⚡ Performance | **90 – 95 / 100** |
-| ♿ Accessibility | **91 / 100** |
-| ✅ Best Practices | **96 / 100** |
-| 🔍 SEO | **100 / 100** |
-
-> *Đo bằng Google Lighthouse trên bản Production (incognito mode)*
+Với tâm thế **"Làm dâu trăm họ — Thiết kế cho mọi nhà"**, Valcore cam kết mang lại những giá trị thực chất nhất:
+- **Tốc độ vượt trội:** Website tải trang tức thì, giữ chân khách hàng từ giây đầu tiên.
+- **Giao diện đẳng cấp:** Thiết kế hiện đại, tinh tế, bắt kịp xu hướng UX/UI toàn cầu.
+- **Tối ưu kinh doanh:** Cấu trúc chuẩn SEO giúp bạn dễ dàng tiếp cận khách hàng tiềm năng.
+- **Chi phí hợp lý:** Giải pháp tối ưu nhất cho ngân sách của bạn nhưng vẫn đảm bảo chất lượng cao cấp.
 
 ---
 
-## 🛠️ Tech Stack
+### 💎 Tại Sao Nên Chọn Valcore?
 
-| Công nghệ | Mục đích |
-|---|---|
-| **Next.js 16** (App Router) | Framework React với Static Site Generation |
-| **TypeScript** | Type-safety cho toàn bộ codebase |
-| **Tailwind CSS v4** | Utility-first styling, zero runtime CSS |
-| **Framer Motion** | Animations mượt mà trên các section phụ |
-| **Lucide React** | Icon library nhẹ và nhất quán |
-| **next/font** | Font tối ưu, zero layout shift |
-| **next/image** | Image optimization tự động (WebP, lazy load) |
+| 🚀 HIỆU NĂNG ĐỈNH CAO | 📱 TRẢI NGHIỆM ĐA NỀN TẢNG | 🔍 CHUẨN SEO TOÀN DIỆN |
+| :--- | :--- | :--- |
+| Website được tối ưu hóa đạt điểm số 90-100 trên Google Lighthouse. Tốc độ là ưu tiên hàng đầu. | Hiển thị hoàn hảo trên mọi thiết bị: từ smartphone, tablet đến desktop màn hình lớn. | Cấu trúc code sạch, hỗ trợ Google Index nhanh chóng, đẩy mạnh vị trí từ khóa. |
 
 ---
 
-## 🏗️ Cấu Trúc Dự Án
-
-```
-valcore/
-├── public/                   # Ảnh portfolio, favicon
-│   ├── business.png
-│   ├── student.png
-│   └── portfolio_*.png
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx        # Root layout, font, SEO metadata
-│   │   ├── page.tsx          # Trang chủ, dynamic imports
-│   │   └── globals.css       # CSS toàn cục, keyframes, design tokens
-│   ├── components/
-│   │   ├── Navbar.tsx        # Sticky header, mobile menu, language switcher
-│   │   ├── Hero.tsx          # Section chính, CTA, floating cards (pure CSS)
-│   │   ├── Trust.tsx         # Stats & tech stack
-│   │   ├── Services.tsx      # 4 dịch vụ chính
-│   │   ├── WhyChooseMe.tsx   # Điểm mạnh cạnh tranh
-│   │   ├── Portfolio.tsx     # Danh sách dự án, lazy load ảnh
-│   │   ├── Process.tsx       # 3-bước quy trình
-│   │   ├── Testimonials.tsx  # Review từ khách hàng
-│   │   ├── Contact.tsx       # Thông tin liên hệ & form
-│   │   ├── Footer.tsx        # Footer với links & branding
-│   │   └── ScrollToTop.tsx   # Floating scroll-to-top button
-│   └── context/
-│       └── LanguageContext.tsx  # i18n: Tiếng Việt / English
-└── README.md
-```
+### 🛠️ Công Nghệ Tiên Phong
+Chúng tôi sử dụng những công nghệ mạnh mẽ nhất hiện nay để đảm bảo dự án của bạn luôn ổn định và bảo mật:
+- **Next.js & React:** Đỉnh cao của sự mượt mà và tốc độ.
+- **Tailwind CSS:** Tinh chỉnh từng pixel, mang lại vẻ ngoài hiện đại nhất.
+- **Framer Motion:** Hiệu ứng chuyển động tinh tế, tạo cảm giác cao cấp.
+- **Cloud Infrastructure:** Đảm bảo website hoạt động 24/7 không gián đoạn.
 
 ---
 
-## 🌐 Tính Năng
-
-- **Đa ngôn ngữ (i18n):** Chuyển đổi mượt giữa 🇻🇳 Tiếng Việt và 🇺🇸 English, lưu lựa chọn vào localStorage
-- **Dark Mode:** Tự động theo system preference, hỗ trợ đầy đủ toàn bộ giao diện
-- **Responsive:** Tối ưu Mobile → Tablet (lg breakpoint) → Desktop
-- **SEO sẵn sàng:** Meta tags, semantic HTML, heading hierarchy chuẩn, JSON title/description
-- **Hiệu năng cao:** Dynamic imports, CSS-only animations ở Hero, `font-display: swap`, `next/image`
-- **Accessibility:** ARIA labels, keyboard navigation, contrast ratio đạt chuẩn WCAG
+### 🎯 Phân Khúc Phục Vụ
+- **Cá nhân / Sinh viên:** Xây dựng thương hiệu cá nhân, landing page giới thiệu dự án chuyên nghiệp.
+- **Tiểu thương / Chủ shop:** Website bán hàng, giới thiệu dịch vụ tối ưu chuyển đổi qua Zalo/Messenger/Hotline.
+- **Doanh nghiệp vừa & nhỏ (SME):** Website giới thiệu công ty, landing page chiến dịch quảng cáo.
 
 ---
 
-## 🎨 Design System
+### 🤝 Kết Nối Với Valcore
+Hãy để **Valcore** giúp bạn hiện thực hóa ý tưởng và phát triển kinh doanh một cách bền vững trên internet.
 
-**Màu chủ đạo (Brand colors):**
-
-```
-brand-400: #818cf8  (Indigo tươi – Dark mode)
-brand-500: #6366f1  (Indigo – Primary)
-brand-600: #4f46e5  (Indigo đậm – CTA, accent)
-brand-700: #4338ca  (Indigo sâu)
-```
-
-**Typography:** Inter (Google Fonts) — `display: swap`, preload từ Next.js
-
-**Hiệu ứng đặc trưng:**
-- `glass` / `glass-card` — Glassmorphism với `backdrop-blur`
-- `text-gradient` — Gradient text từ brand-600 → indigo-400
-- `float-up` / `float-down` — Floating card animations (pure CSS `@keyframes`)
-- `animate-fade-in-up` — Reveal animation cho Hero content
+- **📞 Hotline/Zalo:** [+84 78 554 8882](https://zalo.me/84785548882)
+- **📧 Email:** [lamquocbao26042005@gmail.com](mailto:lamquocbao26042005@gmail.com)
+- **💬 Messenger:** [fb.com/valcore](https://m.me/valcore)
 
 ---
-
-## 🚀 Chạy Dự Án
-
-### Yêu cầu
-- Node.js 18+
-- npm hoặc yarn
-
-### Development
-```bash
-npm install
-npm run dev
-# Mở http://localhost:3000
-```
-
-### Production Build
-```bash
-npm run build
-npx next start -p 3000
-# Mở http://localhost:3000
-```
-
-### Kiểm tra Lighthouse
-> **Quan trọng:** Luôn đo trên bản Production trong Tab Ẩn Danh để có kết quả chính xác.
-
-```bash
-npm run build
-npx next start -p 3001
-# Mở http://localhost:3001 trong Incognito → F12 → Lighthouse
-```
-
----
-
-## 📦 Deploy
-
-Dự án tương thích với mọi nền tảng hỗ trợ Next.js:
-
-| Nền tảng | Cách Deploy |
-|---|---|
-| **Vercel** (khuyến nghị) | `vercel deploy` hoặc kết nối GitHub repo |
-| **Netlify** | Build command: `npm run build`, Publish: `.next` |
-| **VPS / Server** | `npm run build && npx next start -p 80` |
-
----
-
-## 📬 Liên Hệ & Hợp Tác
-
-Bạn muốn đặt làm website hoặc có câu hỏi về dự án? Liên hệ ngay:
-
-| Kênh | Thông tin |
-|---|---|
-| 💬 Zalo | [+84 78 554 8882](https://zalo.me/84785548882) |
-| 📧 Email | [lamquocbao26042005@gmail.com](mailto:lamquocbao26042005@gmail.com) |
-
----
-
-## 📄 Bản Quyền
-
-© {year} **Lâm Quốc Bảo – Valcore**. All rights reserved.  
-*"Làm dâu trăm họ — Thiết kế cho mọi nhà."*
+<div align="center">
+  <p>© 2026 <b>Valcore</b>. Thiết kế bởi <b>Lâm Quốc Bảo</b>.</p>
+</div>
