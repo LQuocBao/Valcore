@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Menu, X, Code2, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -41,10 +40,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: t("nav.services"), href: "#services", width: "w-[80px]" },
-    { name: t("nav.portfolio"), href: "#portfolio", width: "w-[75px]" },
-    { name: t("nav.process"), href: "#process", width: "w-[90px]" },
-    { name: t("nav.testimonials"), href: "#testimonials", width: "w-[100px]" },
+    { name: t("nav.about"), href: "#about", width: "w-[110px]" },
+    { name: t("nav.services"), href: "#services", width: "w-[85px]" },
+    { name: t("nav.portfolio"), href: "#portfolio", width: "w-[80px]" },
+    { name: t("nav.process"), href: "#process", width: "w-[95px]" },
+    { name: t("nav.testimonials"), href: "#testimonials", width: "w-[105px]" },
+    { name: t("nav.faq"), href: "#faq", width: "w-[85px]" },
   ];
 
   return (
@@ -71,7 +72,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setActiveSection(link.href)}
-                className={`${link.width} relative text-center py-2 transition-colors px-2 ${
+                className={`${link.width} relative text-center py-2 transition-colors px-2 whitespace-nowrap ${
                   isActive ? "text-brand-600 font-bold" : "text-foreground hover:text-brand-600 font-medium"
                 }`}
               >
@@ -89,7 +90,6 @@ export default function Navbar() {
           })}
 
           <div className="flex items-center gap-4 border-l border-border pl-6 ml-4">
-            <ThemeToggle />
             {/* Language Dropdown */}
             <div className="relative">
               <button
@@ -158,7 +158,6 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-3 lg:hidden">
-          <ThemeToggle />
           <button
             onClick={() => setLanguage(language === "vi" ? "en" : "vi")}
             className="w-10 h-10 flex items-center justify-center rounded-xl bg-muted text-heading font-bold text-xs"

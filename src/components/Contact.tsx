@@ -55,7 +55,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-heading mb-6"
           >
-            {t("contact.titleStart")} <span className="text-brand-600">{t("contact.titleEnd")}</span>
+            {t("contact.titleStart")} <span className="text-brand-600 whitespace-nowrap">{t("contact.titleEnd")}</span>
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -139,7 +139,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="John Doe"
+                  placeholder="Nguyễn Văn A"
                   className="w-full px-5 py-4 rounded-xl bg-muted/50 border border-border focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"
                 />
               </div>
