@@ -19,7 +19,7 @@ export default function Portfolio() {
   const hasMore = Array.isArray(projects) && displayCount < projects.length;
 
   return (
-    <section id="portfolio" className="py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/50">
+    <section id="portfolio" className="py-24 bg-muted border-t border-border">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
@@ -27,7 +27,7 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="inline-block px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 font-semibold mb-6 uppercase tracking-wider text-sm"
+              className="inline-block px-4 py-1.5 rounded-full bg-brand-500/10 text-brand-600 font-semibold mb-6 uppercase tracking-wider text-sm"
             >
               {t("portfolio.badge")}
             </motion.div>
@@ -36,9 +36,9 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white"
+              className="text-3xl md:text-5xl font-bold text-heading"
             >
-              {t("portfolio.titleStart")} <span className="text-brand-600 dark:text-brand-400">{t("portfolio.titleEnd")}</span>
+              {t("portfolio.titleStart")} <span className="text-brand-600 font-extrabold">{t("portfolio.titleEnd")}</span>
             </motion.h2>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function Portfolio() {
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: (index % 3) * 0.1 }}
-                className="group bg-white dark:bg-slate-800/40 rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-500 border border-slate-200 dark:border-white/5 shadow-sm hover:shadow-xl"
+                className="group bg-card rounded-3xl overflow-hidden hover:-translate-y-2 transition-all duration-500 border border-border shadow-sm hover:shadow-xl"
               >
                 {/* Image Container with Chromeless Crop */}
                 <div className={`relative h-64 w-full bg-gradient-to-br ${colors[index % colors.length]} overflow-hidden`}>
@@ -81,10 +81,10 @@ export default function Portfolio() {
                 </div>
                 
                 <div className="p-8">
-                  <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-3 leading-tight">
+                  <h3 className="text-xl md:text-2xl font-bold text-heading mb-3 leading-tight">
                     {project.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm md:text-base line-clamp-2">
+                  <p className="text-foreground leading-relaxed text-sm md:text-base line-clamp-2">
                     {project.description}
                   </p>
                 </div>

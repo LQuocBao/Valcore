@@ -23,14 +23,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-slate-50 dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800/50">
+    <section id="services" className="py-24 border-t border-slate-100 dark:border-slate-800/50">
       <div className="container mx-auto px-6 md:px-12">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-block px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 font-semibold mb-6 uppercase tracking-wider text-sm"
+            className="inline-block px-4 py-1.5 rounded-full bg-brand-500/10 text-brand-600 font-semibold mb-6 uppercase tracking-wider text-sm"
           >
             {t("services.badge")}
           </motion.div>
@@ -40,9 +40,9 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white"
+            className="text-3xl md:text-5xl font-bold text-heading"
           >
-            {t("services.titleStart")} <span className="text-brand-600 dark:text-brand-400">{t("services.titleEnd")}</span>
+            {t("services.titleStart")} <span className="text-brand-600">{t("services.titleEnd")}</span>
           </motion.h2>
         </div>
 
@@ -59,10 +59,10 @@ export default function Services() {
               <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg ${colors[index]}`}>
                 {icons[index]}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+              <h3 className="text-xl font-bold text-heading mb-4 group-hover:text-brand-600 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-foreground leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

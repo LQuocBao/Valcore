@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { ThemeProvider } from "@/components/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,10 +31,12 @@ export default function RootLayout({
       className={`${inter.variable} scroll-smooth antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-50 font-sans antialiased overflow-x-hidden relative flex flex-col">
-        <LanguageProvider>
-          {children}
-        </LanguageProvider>
+      <body className="min-h-screen font-sans antialiased overflow-x-hidden relative flex flex-col transition-colors duration-500">
+        <ThemeProvider>
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
