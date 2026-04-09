@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import Chatbot from "@/components/Chatbot";
 
 const Trust = dynamic(() => import("@/components/Trust"));
 const Technologies = dynamic(() => import("@/components/Technologies"));
@@ -33,8 +34,11 @@ export default function Home() {
       </div>
       <Footer />
 
+      {/* AI Chatbot */}
+      <Chatbot />
+
       {/* Floating Action Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
+      <div className="fixed bottom-[96px] right-6 z-50 flex flex-col gap-4">
         <ScrollToTop />
 
         {/* Zalo Button */}

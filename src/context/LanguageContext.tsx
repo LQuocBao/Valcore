@@ -185,6 +185,14 @@ const translations: Record<Language, any> = {
     footer: {
       rights: "Valcore. Bản quyền năm {year}. Làm dâu trăm họ - Thiết kế cho mọi nhà.",
       links: ["Dịch Vụ", "Dự Án", "Quy Trình"],
+    },
+    chat: {
+      botName: "Val — Trợ lý AI",
+      status: "Trực tuyến",
+      poweredBy: "Được tổng hợp bởi Groq AI • Valcore 2025",
+      inputPlaceholder: "Nhập câu hỏi của bạn...",
+      greeting: "Xin chào! Tôi là **Val** 👋 - trợ lý AI của **Valcore**.\n\nTôi có thể giúp bạn tìm hiểu về dịch vụ, giá cả, bảo hành trọn đời hoặc tặng domain .com. Bạn cần hỗ trợ gì?",
+      tooltip: "Val nè! Bạn cần hỗ trợ làm web hay đồ án không? Inbox mình nhé! ✨",
     }
   },
   en: {
@@ -361,6 +369,14 @@ const translations: Record<Language, any> = {
     footer: {
       rights: "Valcore. All rights reserved. Built with ❤️ for small businesses.",
       links: ["Services", "Portfolio", "Process"],
+    },
+    chat: {
+      botName: "Val — AI Assistant",
+      status: "Online",
+      poweredBy: "Powered by Groq AI • Valcore 2025",
+      inputPlaceholder: "Type your question...",
+      greeting: "Hello! I am **Val** 👋 - Valcore's AI assistant.\n\nI can help you learn about our services, pricing, lifetime warranty, or free .com domain. How can I help you today?",
+      tooltip: "Val here! Need help with web design or a project? Let's talk! ✨",
     }
   }
 };
