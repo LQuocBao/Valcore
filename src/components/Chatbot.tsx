@@ -238,7 +238,7 @@ export default function Chatbot() {
                   className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none"
                 />
                 <button
-                  onClick={sendMessage}
+                  onClick={() => sendMessage()}
                   disabled={!input.trim() || isLoading}
                   className="w-8 h-8 rounded-xl bg-brand-600 hover:bg-brand-500 disabled:bg-slate-200 dark:disabled:bg-slate-800 disabled:cursor-not-allowed flex items-center justify-center transition-all shadow-md shadow-brand-500/20 hover:shadow-brand-500/40 enabled:hover:scale-105 enabled:active:scale-95"
                 >
