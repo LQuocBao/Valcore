@@ -1,20 +1,24 @@
+"use client";
+
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
-import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import Chatbot from "@/components/Chatbot";
 
+// Dynamically load all off-screen components to optimize performance
 const Trust = dynamic(() => import("@/components/Trust"));
 const Technologies = dynamic(() => import("@/components/Technologies"));
 const Services = dynamic(() => import("@/components/Services"));
 const WhyChooseMe = dynamic(() => import("@/components/WhyChooseMe"));
 const Portfolio = dynamic(() => import("@/components/Portfolio"));
+const Pricing = dynamic(() => import("@/components/Pricing"));
 const Process = dynamic(() => import("@/components/Process"));
 const Testimonials = dynamic(() => import("@/components/Testimonials"));
-import FAQ from "@/components/FAQ";
+const FAQ = dynamic(() => import("@/components/FAQ"));
 const Contact = dynamic(() => import("@/components/Contact"));
+const Footer = dynamic(() => import("@/components/Footer"));
+const Chatbot = dynamic(() => import("@/components/Chatbot"), { ssr: false });
+const ScrollToTop = dynamic(() => import("@/components/ScrollToTop"), { ssr: false });
 
 export default function Home() {
   return (
@@ -25,6 +29,7 @@ export default function Home() {
         <Trust />
         <Technologies />
         <Services />
+        <Pricing />
         <WhyChooseMe />
         <Portfolio />
         <Process />

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CodeXml, PanelsTopLeft, GraduationCap, MonitorCog } from "lucide-react";
+import { Layout, BrainCircuit, Cloud, Lightbulb } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Services() {
@@ -9,10 +9,10 @@ export default function Services() {
   const serviceItems = t("services.items");
 
   const icons = [
-    <CodeXml size={32} key="0" />,
-    <PanelsTopLeft size={32} key="1" />,
-    <GraduationCap size={32} key="2" />,
-    <MonitorCog size={32} key="3" />,
+    <Layout size={32} key="0" />,
+    <BrainCircuit size={32} key="1" />,
+    <Cloud size={32} key="2" />,
+    <Lightbulb size={32} key="3" />,
   ];
 
   const colors = [

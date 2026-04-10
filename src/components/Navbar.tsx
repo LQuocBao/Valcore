@@ -42,6 +42,7 @@ export default function Navbar() {
   const navLinks = [
     { name: t("nav.about"), href: "#about", width: "w-[110px]" },
     { name: t("nav.services"), href: "#services", width: "w-[85px]" },
+    { name: t("nav.pricing"), href: "#pricing", width: "w-[80px]" },
     { name: t("nav.portfolio"), href: "#portfolio", width: "w-[80px]" },
     { name: t("nav.process"), href: "#process", width: "w-[95px]" },
     { name: t("nav.testimonials"), href: "#testimonials", width: "w-[105px]" },
