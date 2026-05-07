@@ -90,7 +90,7 @@ const translations: Record<Language, any> = {
     pricing: {
       badge: "Bảng Giá Dịch Vụ",
       titleStart: "Giá cả rõ ràng,",
-      titleEnd: "không phát sinh ẩn",
+      titleEnd: "không phát sinh thêm chi phí",
       desc: "Chúng tôi có nhiều gói phù hợp với từng nhu cầu — từ sinh viên IT đến doanh nghiệp quy mô lớn.",
       popular: "Phổ Biến Nhất",
       cta: "Liên Hệ Ngay",
